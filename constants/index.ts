@@ -1,13 +1,8 @@
-import { brainwave } from "@/public/assets";
-
 export const images = {
   yourlogo: "/assets/yourlogo.svg",
-  brainwave: "/assets/jobpilot.svg",
   check: "/assets/check.svg",
   check2: "/assets/check-02.svg",
   loading1: "/assets/loading-01.svg",
-  brainwaveSymbol: "/assets/jobpilot-symbol.svg",
-  brainwaveWhiteSymbol: "/assets/jobpilot-symbol-white.svg",
   play: "/assets/play.svg",
   gradient: "/assets/gradient.png",
   smallSphere: "/assets/4-small.png",
@@ -147,7 +142,13 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [brainwave, brainwave, brainwave, brainwave, brainwave];
+export const companyLogos = [
+  "/assets/companies/company-1.svg",
+  "/assets/companies/company-2.svg", 
+  "/assets/companies/company-3.svg",
+  "/assets/companies/company-4.svg",
+  "/assets/companies/company-5.svg"
+];
 
 export const brainwaveServices = ["Resume Builder", "ATS Checker", "Mock Interviews", "Portfolio Generator", "Course Recommendations"];
 

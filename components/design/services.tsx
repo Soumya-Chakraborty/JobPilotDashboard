@@ -1,3 +1,5 @@
+"use client";
+
 import ChatBubbleWing from "@/components/svg/chat-bubble-wing";
 import { images } from "@/constants";
 import Image from "next/image";
@@ -30,7 +32,7 @@ export const VideoChatMessage = () => {
     <div className="absolute left-[3.125rem] top-8 w-full max-w-56 rounded-t-xl rounded-br-xl bg-n-6 pb-7 pl-5 pr-2.5 pt-2.5 font-code text-base md:max-w-[17.5rem]">
       Interview practice completed!
       <div className="absolute bottom-[-1.125rem] left-5 flex size-9 items-center justify-center rounded-xl bg-color-1">
-        <Image src={images.brainwaveWhiteSymbol} width={26} height={26} alt="Job Pilot" />
+        <div className="text-lg font-bold text-white">JP</div>
       </div>
       <p className="tagline absolute bottom-1 right-2.5 text-[0.625rem] uppercase text-n-3">
         just now
@@ -47,7 +49,6 @@ export const VideoBar = () => {
   return (
     <div className="absolute bottom-0 left-0 flex w-full items-center p-6">
       <Image src={images.play} width={24} height={24} alt="Play" className="mr-3 object-contain" />
-
       <div className="flex-1 bg-[#D9D9D9]">
         <div className="h-0.5 w-1/2 bg-color-1"></div>
       </div>

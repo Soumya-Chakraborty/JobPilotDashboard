@@ -1,17 +1,15 @@
-import { companyLogos } from "@/constants";
 import React from "react";
-import Image from "next/image";
 
 const CompanyLogos = ({ className }: { className: string }) => {
   return (
     <div className={className}>
       <h5 className="tagline mb-6 text-center text-n-1/50">
-        Helping people create beautiful content at
+        Trusted by job seekers worldwide
       </h5>
       <ul className="flex">
-        {companyLogos.map((logo, index) => (
+        {[1, 2, 3, 4, 5].map((_, index) => (
           <li key={index} className="flex h-[8.5rem] flex-1 items-center justify-center">
-            <Image src={logo} width={134} height={28} alt={logo} />
+            <span className="text-2xl font-bold text-n-1/50">Job Pilot</span>
           </li>
         ))}
       </ul>
