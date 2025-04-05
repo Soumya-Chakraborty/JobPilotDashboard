@@ -1,8 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
-import { images } from "@/constants";
 
 export default function SignUp() {
   const [name, setName] = useState("");
@@ -35,14 +33,8 @@ export default function SignUp() {
     <div className="flex min-h-screen items-center justify-center bg-n-8">
       <div className="w-full max-w-md rounded-2xl bg-n-7 p-8 shadow-lg">
         <div className="mb-8 flex justify-center">
-          <div className="relative size-16">
-            <Image 
-              src={images.brainwaveSymbol} 
-              alt="Job Pilot" 
-              width={64} 
-              height={64}
-              className="rounded-full"
-            />
+          <div className="flex size-16 items-center justify-center rounded-full bg-color-1">
+            <span className="text-2xl font-bold text-white">JP</span>
           </div>
         </div>
         
