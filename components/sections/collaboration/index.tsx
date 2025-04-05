@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Section from "@/components/layout/section";
 import { collabApps, collabContent, collabText, images } from "@/constants";
@@ -5,12 +7,54 @@ import Image from "next/image";
 import Button from "@/components/atoms/button";
 import { cn } from "@/lib/utils";
 import { LeftCurve, RightCurve } from "@/components/design/collaboration";
+import Heading from "../../atoms/heading";
+import { useFadeInOnScroll, useFloating } from "@/lib/animations";
 
 type Props = {};
 
 const Collaboration = (props: Props) => {
+  const { ref: headingRef, isVisible: headingVisible } = useFadeInOnScroll(0.1);
+  const { ref: imageRef, style: floatingStyle } = useFloating();
+
   return (
     <Section id="collaboration" crosses>
+      <div className="container relative z-2">
+        <div
+          ref={headingRef}
+          className={cn(
+            headingVisible ? "animate-fade-in" : "opacity-0"
+          )}
+        >
+          <Heading
+            className="md:max-w-md lg:max-w-2xl"
+            title="Career Tools for Job Search Success"
+            text="Job Pilot provides the tools you need to succeed in your job search"
+          />
+        </div>
+
+        <div className="relative">
+          <div
+            ref={imageRef}
+            style={floatingStyle}
+            className="animate-float absolute -right-6 top-0"
+          >
+            <img
+              src="/images/collaboration/collaboration.png"
+              alt="Collaboration"
+              className="animate-rotate"
+            />
+          </div>
+
+          <div className="mt-10 flex flex-wrap items-center justify-between gap-10">
+            <div className="w-full md:w-[calc(50%-20px)] lg:w-[calc(33.33%-20px)]">
+              <Button href="#collaboration" className="animate-pulse">
+                Boost Your Career
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="container lg:flex">
         <div className="max-w-[25rem]">
           <h2 className="h2 mb-12 max-md:mb-4">Career Tools for Job Search Success</h2>
@@ -25,7 +69,6 @@ const Collaboration = (props: Props) => {
               </li>
             ))}
           </ul>
-          <Button>Boost Your Career</Button>
         </div>
 
         <div className="mt-4 lg:ml-auto xl:w-[38rem]">
@@ -37,7 +80,7 @@ const Collaboration = (props: Props) => {
             <div className="m-auto flex aspect-square w-60 rounded-full border border-n-6">
               <div className="m-auto aspect-square w-24 rounded-full bg-conic-gradient p-[0.2rem]">
                 <div className="flex h-full items-center justify-center rounded-full bg-n-8">
-                  <Image src={images.brainwaveSymbol} width={48} height={48} alt="job pilot" />
+                  <span className="text-2xl font-bold text-color-1">JP</span>
                 </div>
               </div>
             </div>
