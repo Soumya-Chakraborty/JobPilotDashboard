@@ -1,7 +1,25 @@
-const Arrow = () => {
+"use client";
+
+import React from "react";
+
+type Props = {
+  className?: string;
+};
+
+const Arrow = ({ className }: Props) => {
   return (
-    <svg className="ml-5 fill-n-1" width="24" height="24">
-      <path d="M8.293 5.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L13.586 12 8.293 6.707a1 1 0 0 1 0-1.414z" />
+    <svg
+      className={className}
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12.172 7L6.808 1.636L8.222 0.222L16 8L8.222 15.778L6.808 14.364L12.172 9H0V7H12.172Z"
+        fill="currentColor"
+      />
     </svg>
   );
 };

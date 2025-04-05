@@ -1,5 +1,7 @@
-import { cn } from "@/lib/utils";
+"use client";
+
 import React from "react";
+import { cn } from "@/lib/utils";
 import TagLine from "./tag-line";
 
 type Props = {

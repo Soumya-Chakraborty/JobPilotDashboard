@@ -1,6 +1,8 @@
+"use client";
+
+import React from "react";
 import { cn } from "@/lib/utils";
 import ButtonSvg from "@/components/svg/button-svg";
-import React from "react";
 import Link from "next/link";
 
 type Props = {

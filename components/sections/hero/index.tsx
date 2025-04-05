@@ -27,9 +27,9 @@ const Hero = (props: Props) => {
       <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 mx-auto mb-16 max-w-[62rem] text-center md:mb-20 lg:mb-24">
           <h1 className="h1 mb-6">
-            Explore the Possibilities of&nbsp;AI&nbsp;Chatting with{" "}
+            Accelerate Your Career with&nbsp;AI-Powered&nbsp;Job Assistance from{" "}
             <span className="relative inline-block">
-              Brainwave
+              Job Pilot
               <Image
                 src={images.curve}
                 className="absolute left-0 top-full w-full xl:-mt-2"
@@ -40,11 +40,10 @@ const Hero = (props: Props) => {
             </span>
           </h1>
           <p className={cn("body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8")}>
-            Unleash the power of AI within Brainwave. Upgrade your productivity with Brainwave, the
-            open AI chat app.
+            Unlock your career potential with Job Pilot. Our AI-powered tools help you build perfect resumes, ace interviews, and land your dream job.
           </p>
           <Button href="#pricing" white>
-            Get Started
+            Start Your Career Journey
           </Button>
         </div>
 
@@ -80,7 +79,7 @@ const Hero = (props: Props) => {
                 <ScrollParallax isAbsolutelyPositioned>
                   <Notification
                     className="absolute bottom-44 right-[-5.5rem] hidden w-72 xl:flex"
-                    title="Code generation"
+                    title="Resume Optimization"
                   />
                 </ScrollParallax>
               </div>

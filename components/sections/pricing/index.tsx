@@ -27,7 +27,7 @@ const Pricing = (props: Props) => {
           </div>
         </div>
 
-        <Heading tag="Get started with Brainwave" title="Pay once, use forever" />
+        <Heading tag="Get started with Job Pilot" title="Invest in your career future" />
 
         <div className="relative">
           <PricingList />

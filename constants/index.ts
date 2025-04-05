@@ -120,7 +120,7 @@ export const navigation = [
   },
   {
     id: "2",
-    title: "How to use",
+    title: "How it works",
     url: "#how-to-use",
   },
   {
@@ -130,7 +130,7 @@ export const navigation = [
   },
   {
     id: "4",
-    title: "New account",
+    title: "Create account",
     url: "#signup",
     onlyMobile: true,
   },
@@ -148,15 +148,15 @@ export const notificationImages = [notification4, notification3, notification2];
 
 export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
 
-export const brainwaveServices = ["Photo generating", "Photo enhance", "Seamless Integration"];
+export const brainwaveServices = ["Resume Builder", "ATS Checker", "Mock Interviews"];
 
 export const brainwaveServicesIcons = [recording03, recording01, disc02, chromecast, sliders04];
 
 export const roadmap = [
   {
     id: "0",
-    title: "Voice recognition",
-    text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
+    title: "AI Mock Interviews",
+    text: "Practice your interview skills with our AI-powered mock interviews, providing real-time feedback and suggestions to help you improve your performance.",
     date: "May 2023",
     status: "done",
     imageUrl: roadmap1,
@@ -164,24 +164,24 @@ export const roadmap = [
   },
   {
     id: "1",
-    title: "Gamification",
-    text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
+    title: "Portfolio Generator",
+    text: "Create professional portfolios that showcase your skills and experiences, customized for your industry to help you stand out to potential employers.",
     date: "May 2023",
     status: "progress",
     imageUrl: roadmap2,
   },
   {
     id: "2",
-    title: "Chatbot customization",
-    text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
+    title: "Course Recommendations",
+    text: "Receive personalized course and project recommendations based on your career goals and skill gaps to enhance your employability.",
     date: "May 2023",
     status: "done",
     imageUrl: roadmap3,
   },
   {
     id: "3",
-    title: "Integration with APIs",
-    text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
+    title: "Scholarship Finder",
+    text: "Access our database of available scholarships and funding opportunities to support your educational and career development journey.",
     date: "May 2023",
     status: "progress",
     imageUrl: roadmap4,
@@ -189,7 +189,7 @@ export const roadmap = [
 ];
 
 export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+  "With automated tools and personalized guidance, it's the perfect solution for job seekers looking to advance their careers.";
 
 export const collabContent = [
   {
@@ -203,7 +203,7 @@ export const collabContent = [
   },
   {
     id: "2",
-    title: "Top-notch Security",
+    title: "Personalized Guidance",
   },
 ];
 
@@ -270,34 +270,34 @@ export const pricing = [
   {
     id: "0",
     title: "Basic",
-    description: "AI chatbot, personalized recommendations",
+    description: "Resume builder, ATS checker, basic interview tips",
     price: "0",
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "Automated resume builder with templates",
+      "Basic ATS compatibility check",
+      "Limited access to interview preparation resources",
     ],
   },
   {
     id: "1",
-    title: "Premium",
-    description: "Advanced AI chatbot, priority support, analytics dashboard",
+    title: "Professional",
+    description: "Advanced resume tools, mock interviews, portfolio builder",
     price: "9.99",
     features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
+      "Advanced resume optimization with industry-specific keywords",
+      "Unlimited AI mock interviews with feedback",
+      "Professional portfolio generator with templates",
     ],
   },
   {
     id: "2",
     title: "Enterprise",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
+    description: "Complete career development suite, personalized coaching",
     price: null,
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "Complete access to all Job Pilot features",
+      "Personalized career coaching and strategy",
+      "Priority access to new features and updates",
     ],
   },
 ];
@@ -305,16 +305,16 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Resume Builder",
+    text: "Create professional, ATS-friendly resumes with our automated builder that highlights your skills and experiences effectively.",
     backgroundUrl: "assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "1",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "ATS Checker",
+    text: "Ensure your resume passes Applicant Tracking Systems with our analysis tool that optimizes keywords and formatting.",
     backgroundUrl: "assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
@@ -322,16 +322,16 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    title: "Mock Interviews",
+    text: "Practice with AI-powered interviews that simulate real scenarios and provide constructive feedback to improve your performance.",
     backgroundUrl: "assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
   },
   {
     id: "3",
-    title: "Fast responding",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Portfolio Generator",
+    text: "Showcase your work with professionally designed portfolios that highlight your projects and achievements to potential employers.",
     backgroundUrl: "assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
@@ -339,16 +339,16 @@ export const benefits = [
   },
   {
     id: "4",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Course Recommendations",
+    text: "Receive personalized suggestions for courses and projects that will enhance your skills and make you more competitive in the job market.",
     backgroundUrl: "assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "5",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Market Insights",
+    text: "Stay informed about industry trends, salary benchmarks, and in-demand skills to strategically position yourself in the job market.",
     backgroundUrl: "assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,

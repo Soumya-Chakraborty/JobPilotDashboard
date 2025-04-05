@@ -23,8 +23,8 @@ const Services = (props: Props) => {
     <Section id="how-to-use">
       <div className="container">
         <Heading
-          title="Generative AI made for creators."
-          text="Brainwave unlocks the potential of AI-powered applications"
+          title="Career Tools Made for Job Seekers"
+          text="Job Pilot unlocks the potential of AI-powered career assistance"
         />
 
         <div className="relative">
@@ -32,7 +32,7 @@ const Services = (props: Props) => {
             <div className="pointer-events-none absolute left-0 top-0 h-full md:w-3/5 xl:w-auto">
               <Image
                 src={images.service1}
-                alt="smartest ai"
+                alt="Resume Builder"
                 width={800}
                 height={730}
                 className="size-full object-cover md:object-right"
@@ -40,9 +40,9 @@ const Services = (props: Props) => {
             </div>
 
             <div className="relative z-1 ml-auto max-w-[17rem]">
-              <h4 className="h4 mb-4">Smartest AI</h4>
+              <h4 className="h4 mb-4">Career Assistant</h4>
               <p className="body-2 mb-12 text-n-3">
-                Brainwave unlocks the potential of AI-powered applications
+                Job Pilot unlocks the potential of AI-powered career advancement tools
               </p>
               <ul className="body-2">
                 {brainwaveServices.map((service, index) => (
@@ -64,14 +64,13 @@ const Services = (props: Props) => {
                   className="size-full object-cover"
                   width={630}
                   height={750}
-                  alt="robot"
+                  alt="ATS Check"
                 />
               </div>
               <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-b from-n-8/0 to-n-8/90 p-8 lg:p-15">
-                <h4 className="h4 mb-4">Photo editing</h4>
+                <h4 className="h4 mb-4">ATS Optimization</h4>
                 <p className="body-2 mb-12 text-n-3">
-                  Automatically enhance your photos using our AI app&apos;s photo editing feature.
-                  Try it now!
+                  Automatically optimize your resume to pass Applicant Tracking Systems and get more interviews.
                 </p>
               </div>
 
@@ -80,10 +79,9 @@ const Services = (props: Props) => {
 
             <div className="overflow-hidden rounded-3xl bg-n-7 p-4 lg:min-h-[46rem]">
               <div className="px-4 py-12 xl:px-8">
-                <h4 className="h4 mb-4">Video generation</h4>
+                <h4 className="h4 mb-4">Mock Interviews</h4>
                 <p className="body-2 mb-8 text-n-3">
-                  The world’s most powerful AI photo and video art generation engine. What will you
-                  create?
+                  Practice with our AI-powered interview simulator to build confidence and improve your responses.
                 </p>
 
                 <ul className="flex items-center justify-between">

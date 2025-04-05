@@ -14,7 +14,7 @@ const Roadmap = (props: Props) => {
   return (
     <Section id="roadmap" className="overflow-hidden">
       <div className="container md:pb-10">
-        <Heading tag="Ready to get started" title="What we're working on" />
+        <Heading tag="Ready to advance your career" title="Upcoming features" />
 
         <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-28">
           {roadmap.map((item) => {
@@ -76,7 +76,7 @@ const Roadmap = (props: Props) => {
         </div>
 
         <div className="mt-12 flex justify-center md:mt-15 xl:mt-20">
-          <Button href="#roadmap">Our roadmap</Button>
+          <Button href="#roadmap">Future Career Tools</Button>
         </div>
       </div>
     </Section>
