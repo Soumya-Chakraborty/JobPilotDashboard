@@ -56,7 +56,7 @@ const Navbar = (props: Props) => {
     >
       <div className={cn(`flex items-center px-5 max-lg:py-4 lg:px-7.5 xl:px-10`)}>
         <Link href="#hero" className={cn(`block w-48 xl:mr-8`)}>
-          <Image src={brainwave} alt="brainwave" width={190} height={40} />
+          <Image src={brainwave} alt="Job Pilot" width={190} height={40} />
         </Link>
 
         <nav
@@ -91,18 +91,22 @@ const Navbar = (props: Props) => {
         </nav>
 
         <Link
-          href="#signup"
+          href="/signup"
           className="button mr-8 hidden text-n-1/50 transition-colors hover:text-n-1 lg:block"
         >
           New account
         </Link>
-        <Button className="hidden lg:flex" href="#login">
+        <Button className="hidden lg:flex" href="/signin">
           Sign in
         </Button>
 
-        <Button className="ml-auto lg:hidden" px="px-3" onClick={toggleNavigation}>
+        <button
+          className="ml-auto lg:hidden"
+          aria-label="Toggle Navigation"
+          onClick={toggleNavigation}
+        >
           <MenuSvg openNavigation={openNavigation} />
-        </Button>
+        </button>
       </div>
     </div>
   );

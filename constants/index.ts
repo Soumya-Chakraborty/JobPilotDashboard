@@ -1,11 +1,13 @@
+import { brainwave } from "@/public/assets";
+
 export const images = {
   yourlogo: "/assets/yourlogo.svg",
-  brainwave: "/assets/brainwave.svg",
+  brainwave: "/assets/jobpilot.svg",
   check: "/assets/check.svg",
   check2: "/assets/check-02.svg",
   loading1: "/assets/loading-01.svg",
-  brainwaveSymbol: "/assets/brainwave-symbol.svg",
-  brainwaveWhiteSymbol: "/assets/brainwave-symbol-white.svg",
+  brainwaveSymbol: "/assets/jobpilot-symbol.svg",
+  brainwaveWhiteSymbol: "/assets/jobpilot-symbol-white.svg",
   play: "/assets/play.svg",
   gradient: "/assets/gradient.png",
   smallSphere: "/assets/4-small.png",
@@ -70,7 +72,6 @@ export const images = {
 };
 
 const {
-  yourlogo,
   homeSmile,
   file02,
   searchMd,
@@ -131,13 +132,13 @@ export const navigation = [
   {
     id: "4",
     title: "Create account",
-    url: "#signup",
+    url: "/signup",
     onlyMobile: true,
   },
   {
     id: "5",
     title: "Sign in",
-    url: "#login",
+    url: "/signin",
     onlyMobile: true,
   },
 ];
@@ -146,9 +147,9 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
+export const companyLogos = [brainwave, brainwave, brainwave, brainwave, brainwave];
 
-export const brainwaveServices = ["Resume Builder", "ATS Checker", "Mock Interviews"];
+export const brainwaveServices = ["Resume Builder", "ATS Checker", "Mock Interviews", "Portfolio Generator", "Course Recommendations"];
 
 export const brainwaveServicesIcons = [recording03, recording01, disc02, chromecast, sliders04];
 
@@ -189,7 +190,7 @@ export const roadmap = [
 ];
 
 export const collabText =
-  "With automated tools and personalized guidance, it's the perfect solution for job seekers looking to advance their careers.";
+  "Job Pilot integrates with major job platforms to streamline your job search, automatically applying your optimized resume and tracking your applications in one place.";
 
 export const collabContent = [
   {
@@ -199,67 +200,69 @@ export const collabContent = [
   },
   {
     id: "1",
-    title: "Smart Automation",
+    title: "Application Tracking",
+    text: "Keep track of all your job applications, interviews, and follow-ups in one centralized dashboard for better organization.",
   },
   {
     id: "2",
-    title: "Personalized Guidance",
+    title: "Automated Applications",
+    text: "Save time by automatically applying to jobs that match your profile with a single click across multiple platforms.",
   },
 ];
 
 export const collabApps = [
   {
     id: "0",
-    title: "Figma",
+    title: "LinkedIn",
     icon: figma,
     width: 26,
     height: 36,
   },
   {
     id: "1",
-    title: "Notion",
+    title: "Indeed",
     icon: notion,
     width: 34,
     height: 36,
   },
   {
     id: "2",
-    title: "Discord",
+    title: "Glassdoor",
     icon: discord,
     width: 36,
     height: 28,
   },
   {
     id: "3",
-    title: "Slack",
+    title: "Monster",
     icon: slack,
     width: 34,
     height: 35,
   },
   {
     id: "4",
-    title: "Photoshop",
+    title: "ZipRecruiter",
     icon: photoshop,
     width: 34,
     height: 34,
   },
   {
     id: "5",
-    title: "Protopie",
+    title: "Dice",
     icon: protopie,
     width: 34,
     height: 34,
   },
   {
     id: "6",
-    title: "Framer",
+    title: "CareerBuilder",
     icon: framer,
     width: 26,
     height: 34,
   },
   {
     id: "7",
-    title: "Raindrop",
+    title: "SimplyHired",
     icon: raindrop,
     width: 38,
     height: 32,
