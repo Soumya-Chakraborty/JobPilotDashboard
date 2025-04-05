@@ -1,9 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { brainwave } from "@/public/assets/index";
 import { cn } from "@/lib/utils";
 import { navigation } from "@/constants";
 import Button from "../atoms/button";
@@ -55,8 +53,8 @@ const Navbar = (props: Props) => {
       )}
     >
       <div className={cn(`flex items-center px-5 max-lg:py-4 lg:px-7.5 xl:px-10`)}>
-        <Link href="#hero" className={cn(`block w-48 xl:mr-8`)}>
-          <Image src={brainwave} alt="Job Pilot" width={190} height={40} />
+        <Link href="#hero" className={cn(`block xl:mr-8`)}>
+          <h1 className="text-2xl font-bold text-color-1">Job Pilot</h1>
         </Link>
 
         <nav
